@@ -17,14 +17,20 @@
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kenbone" translatesAutoresizingMaskIntoConstraints="NO" id="naU-Dv-ILw">
                                 <rect key="frame" x="16" y="20" width="288" height="393"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="GRz-Sy-g0d" appends="YES" id="Aco-Wl-nML"/>
                                 </connections>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Hxc-pu-l91">
-                                <rect key="frame" x="23" y="450" width="198" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Image to Punch:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcH-Hh-CEb">
+                                <rect key="frame" x="66.5" y="421.5" width="187" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Hxc-pu-l91">
+                                <rect key="frame" x="61" y="450" width="198" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EuR-b6-SUy">
                                         <rect key="frame" x="0.0" y="0.0" width="92" height="30"/>
@@ -41,16 +47,16 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <viewLayoutGuide key="safeArea" id="z20-Tt-Eaw"/>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Image to Punch:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcH-Hh-CEb">
-                                <rect key="frame" x="67" y="421" width="187" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hxc-pu-l91" secondAttribute="bottom" constant="88" id="64R-G0-C88"/>
+                            <constraint firstItem="Hxc-pu-l91" firstAttribute="centerX" secondItem="fcH-Hh-CEb" secondAttribute="centerX" id="XUL-WZ-2Bd"/>
+                            <constraint firstItem="Hxc-pu-l91" firstAttribute="top" secondItem="fcH-Hh-CEb" secondAttribute="bottom" constant="8" id="nZX-14-xlj"/>
+                            <constraint firstItem="Hxc-pu-l91" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zoB-4m-9DS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
